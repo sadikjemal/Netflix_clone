@@ -5,18 +5,18 @@ import { GoCheckCircleFill } from "react-icons/go";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import styles from "./MovieCard.module.css";
 function MovieCard({ movie }) {
-  let geners = ["Adventure", "Action", "Thriller"];
+  const genres = ["Action", "Thriller", "Adventure"];
   return (
-    <div className={styles.cardwrapper}>
+    <div className={styles.cardWrapper}>
       {/* poster image */}
       <img
         className={styles.poster}
-        src={movie.poster_path}
+        // src={movie.poster_path}
         alt="poster image"
       />
 
       {/* hover card */}
-      <div className={styles.hovercard}>
+      <div className={styles.hoverCard}>
         {/* img */}
         <img
           className={styles.hoverImage}
@@ -24,10 +24,11 @@ function MovieCard({ movie }) {
           alt="hover image"
         />
         {/* badge */}
-        <div className={styles.badge}>Recently added</div>
- 
+        {/* <div className={styles.badge}>Recently added</div> */}
+        <div className={styles.badge}>{movie.badge}</div>
+
         {/* button row */}
-        <div className={styles.buttonrow}>
+       <div className={styles.buttonsRow}>
           <FaCirclePlay
             className={styles.circleButton}
             color="white"
@@ -51,18 +52,21 @@ function MovieCard({ movie }) {
         </div>
 
         {/* metadata row */}
-        <div className={styles.metadatarow}>
-          <span className={styles.tag}> U?/A 16+c</span>
+     <div className={styles.metaRow}>
+          {/* <span className={styles.tag}> U?/A 16+c</span>
           <span className={styles.tag}>Movie</span>
-          <span className={styles.tag}>HD</span>
+          <span className={styles.tag}>HD</span> */}
+          <span className={styles.tag}>{movie.matureRating}</span>
+<span className={styles.tag}>{movie.category}</span>
+<span className={styles.tag}>{movie.quality}</span>
         </div>
 
         {/* genres */}
         <div className={styles.genres}>
-          {geners?.map((g, index) => (
+          {genres?.map((g, index) => (
             <span key={index}>
               {g}
-              {index < geners.length - 1 && (
+              {index < genres.length - 1 && (
                 <span className={styles.dot}> • </span>
               )}
             </span>

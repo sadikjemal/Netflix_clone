@@ -1,5 +1,5 @@
 import React from "react";
-import NetflixBannerLog from "../../assets/ImagesForInitialUse/image/logo.png";
+import NetflixBannerLog from "../../assets/image/logo.png";
 import {Play, Info} from 'lucide-react'
 import style from './Banner.module.css'
 function Banner() {

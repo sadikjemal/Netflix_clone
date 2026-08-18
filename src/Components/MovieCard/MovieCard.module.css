@@ -1,4 +1,4 @@
-.cardwrapper {
+.cardWrapper {
   position: relative;
   width: 290px;
   height: 198px;
@@ -44,7 +44,7 @@
   pointer-events: none;
   z-index: 999999;
 }
-.cardWrapper:hover .hoverCard {
+ .cardWrapper:hover .hoverCard {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) scale(1);
@@ -64,7 +64,7 @@
 }
 .circleButton:hover {
   transform: scale(1.05);
-}
+} 
 .badge {
   background: red;
   color: white;
@@ -89,6 +89,23 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+.circleButtonSmall {
+  border-radius: 50%;
+  background: rgba(34, 34, 34, 0.8);
+  border: 1px solid #555;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  transition: 
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
 .circleButtonSmall:hover {
   background: #333;
   border-color: #777;
