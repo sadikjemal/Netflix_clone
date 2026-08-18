@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Header from './Components/Header/Header'
+import Banner from './Components/Banner/Banner'
+import MovieCard from './Components/MovieCard/MovieCard'
 
 function App() {
 
@@ -11,6 +10,8 @@ function App() {
   return (
     <>
     <Header />
+    <Banner/>
+    <MovieCard/>
     </>
   )
 }

@@ -24,7 +24,7 @@ window.addEventListener("scroll", handleScroll);
 }, []);
 
   return (
-    <header className={`{Styles.header} ${isScrolled ? Styles.scrolled : ""}`}>
+    <header className={`${Styles.header} ${isScrolled ? Styles.scrolled : ""}`}>
       <div className={Styles.container}>
         {/* logo */}
 
