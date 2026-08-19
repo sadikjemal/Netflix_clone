@@ -1,0 +1,11 @@
+.mainWrapper {
+    /* padding-left: 2%; */
+    /* background-color: black; */
+      background-color: #111;
+    padding: 1px 2% 0;
+}
+  .title {
+    color: white;
+    margin: 0;
+    padding: 16px 0;
+  }

@@ -9,7 +9,10 @@ function MovieCard({movie}) {
   return (
     <div className={styles.cardWrapper}>
       {/* poster image */}
-      <  img src={movie.poster_path} alt="poster image" />
+      <  img
+        className={styles.poster}
+      src={movie?.poster_path}
+       alt="poster image"/>
 
       {/* hover card */}
 
@@ -17,7 +20,7 @@ function MovieCard({movie}) {
         {/* img */}
          <img
                  className={styles.hoverImage}
-                 // src={movie.poster_path}
+                 src={movie?.poster_path}
                  alt="hover image"
                />
 
@@ -26,9 +29,9 @@ function MovieCard({movie}) {
 
         {/* button row */}
         <div className={styles.buttonsRow}>
-          <FaCirclePlay color="white" size={40}/>
-          <BsPlusCircle color="white" size={40}/>
-          <GoCheckCircleFill  color="white" size={40} />
+          <FaCirclePlay className={styles.circleButton} color="white" size={40}/>
+          <BsPlusCircle className={styles.circleButton} color="white" size={40}/>
+          <GoCheckCircleFill className={styles.circleButton} color="white" size={40} />
           <IoIosArrowDropdownCircle className={styles.circleButtonSmall}  color="white" size={40} />
         </div>
 
