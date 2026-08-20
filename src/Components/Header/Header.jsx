@@ -27,7 +27,6 @@ window.addEventListener("scroll", handleScroll);
     <header className={`${Styles.header} ${isScrolled ? Styles.scrolled : ""}`}>
       <div className={Styles.container}>
         {/* logo */}
-
         <img className={Styles.logo} src={logo} alt="Logo" />
 
         {/* navigation links */}

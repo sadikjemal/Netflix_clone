@@ -1,4 +1,4 @@
-## What I Learned Today
+## About slideShow concept 
 
   ### React Components and Props
   - Connected `DisplayRow`, `SlideShow`, and `MovieCard`
@@ -36,3 +36,5 @@
   and action icons.
   - Adjusted overflow, padding, margins, image sizes, and
   spacing for a cleaner Netflix-style design.
+
+  ## About API integration with Netflix Clone
