@@ -11,6 +11,8 @@ function App() {
       <Banner />
       <DisplayRow />
       <Footer />
+
+      Developed By: Sadik J
     </>
   );
 }
