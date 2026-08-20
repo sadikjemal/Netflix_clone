@@ -72,8 +72,10 @@ function Footer() {
         <p className={styles.copyright}>
           © 1997-2026 Netflix, Inc.
         </p>
+         <p className={styles.developer}>Developed By: Sadik J</p>
 
       </div>
+
     </footer>
   );
 }
